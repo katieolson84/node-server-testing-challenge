@@ -54,8 +54,8 @@ describe('Friends model', () => {
 
     describe('remove', () => {
         it('can delete a friend', async () => {
-            
-
+            const res = await supertest(server).delete('/1')
+            expect(res.statusCode).toBe(404)
         })
     })
 })

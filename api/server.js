@@ -18,7 +18,7 @@ server.get("/friends", (req, res) => {
     });
 });
 
-server.get("/friends/id", (req, res) => {
+server.get("/friends/:id", (req, res) => {
   res.end()
 });
 
@@ -30,8 +30,6 @@ server.delete("/friends/:id", (req, res) => {
   res.end()
 });
 
-server.put("/friends/:id", (req, res) => {
-  res.end()
-});
+
 
 module.exports = server;
